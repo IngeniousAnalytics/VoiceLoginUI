@@ -1,0 +1,204 @@
+/* Orange-themed UI */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #fff5e6;
+}
+
+.recording-indicator {
+  color: #ff0000;
+  animation: pulse 1.5s infinite;
+  margin: 10px 0;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+button.recording {
+  background-color: #ff0000;
+}
+
+.alert.success {
+  color: green;
+}
+
+.alert.error {
+  color: red;
+}
+
+.switch-link {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+.status-icon {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.status-icon.success {
+  color: #4CAF50;
+}
+
+.status-icon.error {
+  color: #F44336;
+}
+
+.alert {
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+.alert.success {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.alert.error {
+  background: #ffebee;
+  color: #c62828;
+}
+
+
+
+.auth-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+}
+
+.voice-auth-box h2 {
+  color: #ff7b00;
+  margin-bottom: 1.5rem;
+}
+
+.voice-button {
+  background: #ff7b00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 1rem auto;
+  transition: all 0.3s;
+}
+
+.voice-button.recording {
+  background: #ff3c00;
+  transform: scale(1.05);
+}
+
+.voice-visualizer {
+  margin: 20px 0;
+  height: 100px;
+}
+
+.switch-mode {
+  color: #ff7b00;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.error {
+  color: red;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.input-group {
+  margin: 15px 0;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.register-button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.register-button:disabled {
+  background: #cccccc;
+}
+
+.response-message {
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.response-message.success {
+  background: #dff0d8;
+  color: #3c763d;
+}
+
+.response-message.error {
+  background: #f2dede;
+  color: #a94442;
+}
+
+.recording-instructions {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.countdown {
+  font-weight: bold;
+  color: #d9534f;
+  margin-top: 0.5rem;
+}
+
+.record-button {
+  background: #d9534f;
+  color: white;
+}
+
+.record-button.active {
+  background: #5cb85c;
+}
+
+.message.success {
+  color: #5cb85c;
+}
+
+.message.error {
+  color: #d9534f;
+}
